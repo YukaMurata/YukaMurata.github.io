@@ -8,9 +8,13 @@
     <title>hogehoge</title>
 
     <link href="css/index.css" rel="stylesheet" type="text/css">
-<!--[if lt IE 9]>
-    <script src="/common/js/gateway/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-<![endif]-->
+<script type="text/javascript">
+  document.addEventListener('touchstart',event =>{
+    if(event.touches.length > 1){
+      event.preventDefault();
+    }
+  },true);
+</script>
   </head>
   <body class="index">
   <div class="header">header</div>
